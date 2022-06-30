@@ -36,6 +36,11 @@
   text-decoration: none;
 
   transition: color 250ms var(--timing-animation-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .link-address {
@@ -52,20 +57,15 @@
   text-decoration: none;
 
   transition: color 250ms var(--timing-animation-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .no-margin.link {
   margin-bottom: 0;
-}
-
-.link-address:hover,
-.link-address:focus {
-  color: var(--accent-color);
-}
-
-.footer-list .link:hover,
-.footer-list .link:focus {
-  color: var(--accent-color);
 }
 
 .footer-form-field {
@@ -99,6 +99,15 @@
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  .form-input:focus + & {
+    color: var(--primary-white-color);
+    transform: translateY(-120%);
+  }
+
+  .form-input:not(:placeholder-shown) + .& {
+    color: var(--primary-white-color);
+    transform: translateY(-120%);
+  }
 }
 
 .footer .footer-soc-list {
@@ -110,10 +119,10 @@
   width: 44px;
   height: 44px;
   margin-left: 10px;
-}
 
-.footer-soc-list .item:first-child {
-  margin-left: 0;
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
 .footer-soc-link {
@@ -128,16 +137,16 @@
 
   transition: background-color 250ms var(--timing-animation-function),
     color 250ms var(--timing-animation-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+  }
 }
 
 .footer-soc-icon {
   fill: currentColor;
-}
-
-.footer-soc-link:hover,
-.footeer-soc-link:focus {
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
 }
 
 .form-input {
@@ -152,16 +161,6 @@
   background-color: transparent;
   transition: transform 250ms var(--timing-animation-function),
     color 250ms var(--timing-animation-function);
-}
-
-.form-input:focus + .footer-lable {
-  color: var(--primary-white-color);
-  transform: translateY(-120%);
-}
-
-.form-input:not(:placeholder-shown) + .footer-lable {
-  color: var(--primary-white-color);
-  transform: translateY(-120%);
 }
 
 .form-btn {
@@ -184,11 +183,10 @@
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   transition: background-color 250ms var(--timing-animation-function);
-}
-
-.form-btn:hover,
-.form-btn:focus {
-  background-color: #188ce8;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
 
 .footer-form-icon {

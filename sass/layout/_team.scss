@@ -53,10 +53,9 @@
   width: 44px;
   height: 44px;
   margin-left: 10px;
-}
-
-.team-soc-list .item:first-child {
-  margin-left: 0;
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
 .team-soc-link {
@@ -71,13 +70,12 @@
 
   transition: background-color 250ms var(--timing-animation-function),
     color 250ms var(--timing-animation-function);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+  }
 }
 .team-soc-icon {
   fill: currentColor;
-}
-
-.team-soc-link:hover,
-.team-soc-link:focus {
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
 }

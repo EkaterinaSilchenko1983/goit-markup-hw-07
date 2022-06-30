@@ -44,8 +44,8 @@
   border: none;
 
   transition: background-color 250ms var(--timing-animation-function);
-}
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: #188ce8;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
