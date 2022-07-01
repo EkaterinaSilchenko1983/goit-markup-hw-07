@@ -2,12 +2,13 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  & .item:not(:last-child) {
-    margin-right: 8px;
-  }
 }
 
-.filter-btn {
+.filter__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter__btn {
   display: inline-block;
   border-radius: 4px;
   padding: 6px 22px;

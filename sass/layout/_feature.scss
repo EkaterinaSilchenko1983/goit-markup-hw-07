@@ -1,16 +1,10 @@
-.section {
-  background-color: var(--primary-white-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .feature-list {
   display: flex;
   margin-left: -30px;
   margin-top: -30px;
 }
 
-.feature-list .item {
+.feature-list-item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
@@ -26,7 +20,7 @@
   background-color: var(--general-background-color);
 }
 
-.feature-list .title {
+.feature-list-title {
   margin-bottom: 10px;
 
   color: var(--title-text-color);
@@ -35,7 +29,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.feature-list .text {
+.feature-list-text {
   color: var(--main-text-color);
   font-size: 14px;
   line-height: 1.71;
