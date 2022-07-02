@@ -6,21 +6,22 @@
   display: flex;
   margin-left: -30px;
   margin-top: -30px;
-  .item {
-    flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
-  }
+}
+
+.about__item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .thumb {
   position: relative;
 }
 
-.label {
+.thumb__label {
   position: absolute;
   width: 100%;
-  transform: translateY(-100%);
+  bottom: 0;
   padding: 27px;
 
   font-weight: 700;
@@ -34,7 +35,7 @@
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.section-title {
+.section__title {
   margin-bottom: 50px;
 
   color: var(--title-text-color);
